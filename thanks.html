@@ -1,61 +1,110 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sicherheitskonto Bestätigung</title>
+
   <style>
     body {
-      background: linear-gradient(to right, #4facfe, #00f2fe);
-      font-family: Arial, sans-serif;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: #f4f4f4;
       margin: 0;
-      padding: 40px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      padding: 0;
+      color: #000;
     }
-    .card {
-      background-color: white;
-      border-radius: 20px;
-      padding: 40px;
-      max-width: 700px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+    .container {
+      max-width: 640px;
+      margin: 60px auto;
+      background-color: #ffffff;
+      padding: 48px 32px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+      border-radius: 14px;
+    }
+
+    .logo {
       text-align: center;
+      margin-bottom: 36px;
     }
-    .checkmark {
-      font-size: 60px;
-      color: #333;
-      margin-bottom: 30px;
+
+    .logo img {
+      max-width: 180px;
+      height: auto;
     }
-    .text {
+
+    h1 {
+      font-size: 26px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 28px;
+      line-height: 1.3;
+    }
+
+    p {
       font-size: 16px;
-      color: #222;
       line-height: 1.7;
-      text-align: justify;
+      margin-bottom: 20px;
+    }
+
+    .info-block {
+      background-color: #f9f9f9;
+      border-left: 4px solid #861b1d;
+      padding: 20px;
+      margin: 30px 0;
+      font-size: 15px;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 13px;
+      color: #888;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 32px 20px;
+      }
+
+      h1 {
+        font-size: 22px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <div class="checkmark">✔️</div>
-    <div class="text">
-      Sehr geehrter Herr Dr. Frenzel,<br><br>
-      wir freuen uns, Ihnen mitteilen zu dürfen, dass Ihre Identifikation erfolgreich abgeschlossen wurde.<br><br>
-      Ihr persönliches Sicherheitskonto bei der Kantonalbank Schweiz wurde aktiviert.<br><br>
+  <div class="container">
+    <div class="logo">
+      <img src="https://www.zkb.ch/media/zkb/system/logo-zkb-inverted.r200img.svg/1618047913764/logo-zkb-inverted.svg" alt="ZKB Logo" />
+    </div>
 
-      <strong>Bank:</strong> Kantonalbank<br>
-      <strong>Inhaber:</strong> Dr. Gunter Martin Frenzel<br>
-      <strong>Kontonummer:</strong> 009631703644<br>
-      <strong>Bankleitzahl:</strong> 00777<br>
-      <strong>IBAN:</strong> CH3400777009631703644<br>
-      <strong>BIC:</strong> KBSZCH22XXX<br><br>
+    <h1>Ihre Identifikation wurde erfolgreich abgeschlossen</h1>
 
-      Sie können den ausgewiesenen Betrag ab sofort auf Ihr Sicherheitskonto überweisen. Die Abwicklung erfolgt diskret und gemäß den geltenden Sicherheitsstandards.<br><br>
+    <p>Sehr geehrter Herr Dr. Frenzel,</p>
 
-      Für Rückfragen oder weitere Unterstützung stehen wir Ihnen jederzeit gerne zur Verfügung.<br><br>
+    <p>wir freuen uns, Ihnen mitteilen zu dürfen, dass Ihre Identifikation erfolgreich abgeschlossen wurde.</p>
 
-      Mit freundlichen Grüßen<br>
-      Kundendienst – Kantonalbank Schweiz
+    <p>Ihr persönliches Sicherheitskonto bei der Kantonalbank Schweiz wurde aktiviert.</p>
+
+    <div class="info-block">
+      <p><strong>Bank:</strong> Kantonalbank<br>
+         <strong>Inhaber:</strong> Dr. Gunter Martin Frenzel<br>
+         <strong>Kontonummer:</strong> 009631703644<br>
+         <strong>Bankleitzahl:</strong> 00777<br>
+         <strong>IBAN:</strong> CH3400777009631703644<br>
+         <strong>BIC:</strong> KBSZCH22XXX</p>
+    </div>
+
+    <p>Sie können den ausgewiesenen Betrag ab sofort auf Ihr Sicherheitskonto überweisen. Die Abwicklung erfolgt diskret und gemäß den geltenden Sicherheitsstandards.</p>
+
+    <p>Für Rückfragen oder weitere Unterstützung stehen wir Ihnen jederzeit gerne zur Verfügung.</p>
+
+    <p>Mit freundlichen Grüßen<br>
+    <strong>Kundendienst – Kantonalbank Schweiz</strong></p>
+
+    <div class="footer">
+      © 2025 Kantonalbank Schweiz – Vertraulich & Sicher
     </div>
   </div>
 </body>
